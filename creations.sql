@@ -1,0 +1,12 @@
+-- CREATE DATABASE CompData;
+-- USE CompData;
+
+-- CREATE TABLE EmpData (
+--     id INT,
+--     name VARCHAR(150),
+--     email VARCHAR(150),
+--     gender VARCHAR(20),
+--     dept VARCHAR(50),
+--     address VARCHAR(150),
+--     sal DECIMAL(10,2) 
+-- );

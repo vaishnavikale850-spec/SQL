@@ -63,3 +63,41 @@
 
 -- select distinct name from emp ;
 
+-- Aggregate FUNCTION
+
+-- 1. MAX
+-- 2. MIN
+-- 3. COUNT
+
+
+-- CREATE DATABASE info;
+-- USE info;
+-- CREATE TABLE students (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255), marks INT NOT NULL);
+-- INSERT INTO students VALUES 
+--     (1, "Radha", 20),
+--     (2,"Ram" , 19),
+--     (3, "Abhi", 18),
+--     (4, "Vaishnavi", 17),
+--     (5, "Jay", 19);
+
+-- SELECT name, marks from students order by marks desc limit 1;
+
+-- select  name , MAX(marks) as maximum_marks from students group by marks , name limit 1;  
+
+-- (select MIN(marks) as min_marks from students) this only give min marks not name and marks because of by using group by there is grouping on marks , name and then from that group we get the min marks this give error for aggregate function unable to execute complete query and throw error. So, we use this query for same.
+
+-- select name , marks from students where marks = (select MIN(marks) as min_marks from students);
+
+-- select count(*) as Total_Students from students;
+
+-- select AVG(marks) as Avgrage_Performance from students;
+
+-- select AVG(marks) as Avgrage_Performance , SUM(marks) as Total_marks_sum from students;
+
+-- SELECT * from students;
+
+-- Select names and give table name as marks below query...
+-- select name marks from students where marks > 18;
+
+-- select name , marks from students where marks > 18;
+
